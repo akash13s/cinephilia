@@ -1,4 +1,4 @@
-.track{
+.thumb{
     width:250px;
     height:250px;
     position: relative;
@@ -7,7 +7,7 @@
     cursor: pointer;
 }
 
-.track-img{
+.thumb-img{
     width: 250px;
     height:270px;
     border-radius: 3%;

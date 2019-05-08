@@ -4,6 +4,7 @@ import HeroImage from '../HeroImage/HeroImage.js';
 import {API_KEY,API_URL,POSTER_SIZE,BACKDROP_SIZE,IMAGE_BASE_URL} from '../config.js';
 import SearchBar from '../SearchBar/SearchBar';
 import Grid from '../Grid/Grid';
+import ResGrid from '../ResGrid/ResGrid';
 import Footer from '../Footer/Footer';
 
 class Home extends Component{
@@ -80,7 +81,8 @@ class Home extends Component{
                 :null
                 }
                 <h2 className='state-header' >{this.state.header}</h2>
-                <Grid movies={this.state.movies}/>
+                {/* <Grid movies={this.state.movies}/> */}
+                <ResGrid movies={this.state.movies}/>
                 <button type="button" class="btn btn-outline-info center-it" onClick={this.loadMoreItems}>Load More</button>
                 <div class='introduce-margin-top'>
                     <Footer/>

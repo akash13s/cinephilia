@@ -9,14 +9,14 @@ const Grid = ({movies}) =>{
             // console.log(poster_path);
             let full_poster_url=`https://image.tmdb.org/t/p/w500${poster_path}`;
             return (
-                <div key={id} class='track'>
-                <Link to={`/${id}`}>
-                <img src={full_poster_url} class='track-img' alt='track-pic'/>
-                </Link>
+                <div key={id} className='thumb'>
+                    <Link to={`/${id}`}>
+                    <img src={full_poster_url} className='thumb-img' alt='thumb'/>
+                    </Link>
                 </div>
             )
         })
-    )
+    )  
 }
 
 export default Grid;

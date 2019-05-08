@@ -6,8 +6,7 @@ import {Link} from 'react-router-dom';
 const Header=()=>{
 
     return (
-        <nav className="navbar navbar-dark bg-dark">
-        {/* // <nav class="navbar navbar-inverse navbar-fixed-top"> */}
+        <nav className="navbar navbar-dark bg-dark navbar-fixed-top">
             <a  className="navbar-brand" href="#">
             <Link to='/'>
                 <img src={Logo} style={{width:50,height:35}} className="d-inline-block align-top" alt="header" />
@@ -16,6 +15,7 @@ const Header=()=>{
             </a>
         </nav>
     )
+
 }
 
 export default Header;

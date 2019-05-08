@@ -1,0 +1,20 @@
+.make-responsive{
+    display: inline-block;
+    position: relative;
+    margin-top:1%;
+    padding:0.1%;
+    margin-left:2.3%;
+    margin-right:0.5%;
+    /* width:24%;
+    height:32%; */
+    width:30%;
+    height:36%;
+    cursor: pointer;
+    opacity: 1;
+    transition: 0.7s ease;
+    overflow:hidden;
+}
+
+.make-rounded-img{
+    border-radius: 5%;
+}
