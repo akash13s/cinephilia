@@ -83,7 +83,7 @@ class Home extends Component{
                 <h2 className='state-header' >{this.state.header}</h2>
                 {/* <Grid movies={this.state.movies}/> */}
                 <ResGrid movies={this.state.movies}/>
-                <button type="button" class="btn btn-outline-info center-it" onClick={this.loadMoreItems}>Load More</button>
+                <button type="button" class="btn btn-outline-info center-it" onClick={this.loadMoreItems}>Load more</button>
                 <div class='introduce-margin-top'>
                     <Footer/>
                 </div>
