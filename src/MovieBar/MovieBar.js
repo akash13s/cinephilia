@@ -2,12 +2,11 @@ import React from 'react';
 import './MovieBar.css';
 
 const MovieBar=(props)=>{
-    // console.log(props.rating);
     let h=(props.runtime)/60;
     const hrs=parseInt(h,10); 
     const min=(props.runtime)%60;
     const directors=props.directors;
-    
+
     return (
         <div class="jumbotron jumbotron-fluid">
         <div class="container">
@@ -29,6 +28,10 @@ const MovieBar=(props)=>{
                     <br/>
                     <br/>
                     <i class="fas fa-star fa-lg">Rating: {props.rating}/10</i>
+                    <br/>
+                    <br/>
+                    <i class="fas fa-video fa-lg"><a href={`https://www.themoviedb.org/video/play?key=${props.trailer}`} target="_blank"> Watch the trailer here!</a> </i>
+                    <br/>
                 </div>
             </div>  
         </div>
